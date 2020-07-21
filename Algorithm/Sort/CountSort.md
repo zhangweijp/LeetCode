@@ -48,7 +48,7 @@ count\[i]存放的是元素出现的频率，那么我们可以通过遍历count
         ArrSorted[--count[Arr[i]]] = Arr[i];
     }
 ```
-结合第一点的改进
+结合第一点的改进:
 ```java
     for(int i = arr.length-1; i >= 0; i--) {
         ArrSorted[--count[Arr[i] - Start]] = Arr[i];
