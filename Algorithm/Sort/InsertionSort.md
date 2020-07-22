@@ -3,7 +3,7 @@
 ## 算法思想
 从前向后遍历数组，再以当前元素的位置为起点，向前选择合适的位置进行插入。
 ## Java代码
-```
+```java
 public class InsertionSort {
     public void insertionSort(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
@@ -14,6 +14,18 @@ public class InsertionSort {
                 nums[p-1] = temp;
                 p--;
             }
+        }
+    }
+    //对交换方式进行了优化
+    public void insertionSort2(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            int temp = nums[i];
+            int p = i-1;
+            while (p >= 0 && temp < nums[p]) {
+                nums[p+1] = nums[p];
+                p--;
+            }
+            nums[p+1] = temp;
         }
     }
     public static void main(String[] args) {
