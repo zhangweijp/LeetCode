@@ -26,7 +26,7 @@ dp[i][2]:
     数组中所有元素的初始值都置为 1，因为每个元素都是长度为1的湍流子数组。
 ### 第四步：考虑输出
     使用max来记录，最大湍流子数组的长度。
-### **java代码**
+### java代码
 ```java
 class Solution {
     public int maxTurbulenceSize(int[] A) {
@@ -71,7 +71,7 @@ class Solution {
 ```
 ### 第五步：考虑空间优化
     不难看出，dp[i]仅有dp[i-1]推出，那么我们就可以对dp数组进行降维，使用两个变量来代替数组进行数据的更新。
-### **空间优化后的java代码**
+### 空间优化后的java代码
 ```java
 class Solution {
     public int maxTurbulenceSize(int[] A) {
