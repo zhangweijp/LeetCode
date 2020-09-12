@@ -23,5 +23,6 @@ public List postorder(TreeNode root){
             root = stack.pop();
         }
     }
+    return list;
 }
 ```

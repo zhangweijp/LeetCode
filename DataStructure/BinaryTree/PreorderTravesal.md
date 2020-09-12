@@ -32,5 +32,6 @@ public List preorder(TreeNode root){
             root = stack.pop();
         }
     }
+    return list;
 }
 ```

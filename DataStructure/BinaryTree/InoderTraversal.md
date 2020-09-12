@@ -20,5 +20,6 @@ public List ineorder(TreeNode root){
             root = root.right;
         }
     }
+    return list;
 }
 ```
