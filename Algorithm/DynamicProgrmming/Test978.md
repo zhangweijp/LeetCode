@@ -88,7 +88,7 @@ class Solution {
                     t_2++;
                     t_1 = 1;
                 }
-            }else if (A[i] < A[i-1]){
+            } else if (A[i] < A[i-1]) {
                 if ((i & 1) == 1) {
                     t_2++;
                     t_1 = 1;
@@ -96,7 +96,7 @@ class Solution {
                     t_1++;
                     t_2 = 1;
                 }
-            }else {
+            } else {
                 t_1 = 1;
                 t_2 = 1;
                 continue;
